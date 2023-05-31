@@ -16,20 +16,14 @@ body {
   margin: 0 auto;
 }
 
-.App {
-  display: flex;
-  height: 100vh;
-  align-items: center;
-  justify-content: center;
-}
-
 .calculator {
   max-width: 400px;
   margin: auto;
   margin-bottom: 30px;
 }
 
-.result {
+.display {
+  width: 100%;
   background-color: var(--display);
   height: 40px;
   line-height: 40px;
@@ -60,4 +54,12 @@ button[id="="] {
 
 button:hover {
   opacity: 0.7;
+}
+
+.quotes {
+  background-color: aqua;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: left;
 }
