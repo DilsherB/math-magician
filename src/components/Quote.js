@@ -3,7 +3,9 @@ import React, { useEffect } from "react";
 const Quote = () => {
   useEffect(() => {
     const fetchData = async () => {
-      
+      const apiData = await fetch("https://api.api-ninjas.com/v1/quotes?category=education");
+      const data = await apiData.json();
+      console.log(data);
     };
     fetchData();
   });
