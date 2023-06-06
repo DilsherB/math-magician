@@ -1,29 +1,33 @@
 import React from "react";
 
-const Menu = () => {
+// Navbar component
+const Navbar = () => {
   const menuItems = {
     home: "Home",
     calculator: "Calculator",
     quote: "Quote",
   };
   return (
-    <div>
-      <nav className="navbar navbar-expand-lg navbar-light bg-dark">
-        <h3>Math Magicians</h3>
-        {/* <div className="collapse navbar-collapse" id="navbarNav"> */}
-        <ul className="navbar-nav">
-          {Object.keys(menuItems).map((item) => (
-            <li className="nav-item" key={item}>
-              <a className="nav-link" href={`#${item}`}>
-                {menuItems[item]}
-              </a>
-            </li>
-          ))}
-        </ul>
-        {/* </div> */}
-      </nav>
+    <div className="d-inline-flex px-3 w-100">
+      <a href="#home" className="text-decoration-none">
+        <img
+          src="https://img.freepik.com/premium-vector/hotel-logo-simple-illustration_434503-736.jpg?w=200"
+          alt="Logo"
+          width={40}
+          height={40}
+          className="rounded-circle mt-2"
+        />
+      </a>
+      <h2 className="mt-2 col-2">Math Magicians</h2>
+      <ul className="d-flex justify-content-end gap-5 w-100 mt-2">
+        {Object.keys(menuItems).map((item) => (
+          <li key={item} className="list-group-item">
+            <a href={`#${item}`} className="text-decoration-none text-white">{menuItems[item]}</a>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };
 
-export default Menu;
+export default Navbar;
