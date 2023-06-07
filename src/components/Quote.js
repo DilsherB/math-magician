@@ -26,20 +26,15 @@ const Quote = () => {
     fetchData();
   }, []);
   return (
-    <div style={{ height: "85vh" }} className="d-flex align-items-center">
-      <div
-        className="quotes w-50"
-        style={{ margin: "auto" }}
-      >
-        {loading && <div className="center">Loading...</div>}
-        {error && <div>{error}</div>}
-        {data && (
-          <div>
-            <p>{data.quote}</p>
-            <h3 className="right">~{data.author}</h3>
-          </div>
-        )}
-      </div>
+    <div className="quotes">
+      {loading && <div className="center">Loading...</div>}
+      {error && <div>{error}</div>}
+      {data && (
+        <div>
+          <p>{data.quote}</p>
+          <h3 className="right">~{data.author}</h3>
+        </div>
+      )}
     </div>
   );
 };

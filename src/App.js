@@ -7,7 +7,7 @@ import Menu from "./components/Menu";
 
 function App() {
   return (
-    <>
+    <div className="App">
       <Menu />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -15,7 +15,7 @@ function App() {
         <Route path="/Calculator" element={<Calculator />} />
         <Route path="/Quote" element={<Quote />} />
       </Routes>
-    </>
+    </div>
   );
 }
 
