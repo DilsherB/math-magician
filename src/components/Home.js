@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <div>
       <h1>Hi there!</h1>
-      <p className="text-left bg-dark">
+      <p className="text-left">
         Welcome to math Magicians website.
         <br />
         Here you can do some basic calculations by going to Calculator tab.
