@@ -2,15 +2,28 @@ import React from "react";
 
 const Home = () => {
   return (
-    <pre className="home">
-      Hi, Guest:
+    <div>
+      <h1>Hi there!</h1>
       <p>
-        Welcome to my Math Magician Web App. Here I have made it using React,
-        bootStrap, React Icons, CSS and React Router Dom.
-        Here you can do basic calculations by going to calculator tab from the menu.
-        You can also view a random quote by going to the quote tab from the menu.
+        Welcome to math Magicians website.
+        <br />
+        Here you can do some basic calculations by going to Calculator tab.
+        <br />
+        You can also read some beatiful quotes by going to Quote tab.
+        <br />
+        This web app is build by me(Dilsher Balouch). I used following techs
+        here:
+        <br />
+        <ol>
+          <li>React</li>
+          <li>React Router</li>
+          <li>React Hooks</li>
+          <li>React Bootstrap</li>
+          <li>ESLint</li>
+          <li>Netlify</li>
+        </ol>{" "}
       </p>
-    </pre>
+    </div>
   );
 };
 
