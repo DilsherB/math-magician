@@ -9,12 +9,12 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+/* 
 body {
   text-align: center;
   max-width: 500px;
   margin: 0 auto;
-}
+} */
 
 .calculator {
   max-width: 400px;

@@ -1,29 +1,26 @@
 import React from "react";
 
-const Menu = () => {
+// Navbar component
+const Navbar = () => {
   const menuItems = {
     home: "Home",
     calculator: "Calculator",
     quote: "Quote",
   };
   return (
-    <div>
-      <nav className="navbar navbar-expand-lg navbar-light">
-        <h3>Math Magicians</h3>
-        {/* <div className="collapse navbar-collapse" id="navbarNav"> */}
-        <ul className="navbar-nav d-flex">
-          {Object.keys(menuItems).map((item) => (
-            <li className="nav-item" key={item}>
-              <a className="nav-link" href={`#${item}`}>
-                {menuItems[item]}
-              </a>
-            </li>
-          ))}
-        </ul>
-        {/* </div> */}
-      </nav>
+    <div className="d-inline-flex px-3 w-100 bg-light">
+      <h5>Math Magicians</h5>
+      <ul className="d-flex justify-content-end gap-5 w-100 mt-2">
+        {Object.keys(menuItems).map((item) => (
+          <li key={item} className="list-group-item">
+            <a href={`#${item}`} className="text-decoration-none text-dark">
+              {menuItems[item]}
+            </a>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };
 
-export default Menu;
+export default Navbar;
