@@ -1,4 +1,4 @@
-// import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Route, Routes } from "react-router";
 import "./App.css";
 import Calculator from "./components/Calculator";
 import Home from "./components/Home";
@@ -9,9 +9,12 @@ function App() {
   return (
     <div className="App">
       <Menu />
-      <Home />
-      <Calculator />
-      <Quote />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Home" element={<Home />} />
+        <Route path="/Calculator" element={<Calculator />} />
+        <Route path="/Quote" element={<Quote />} />
+      </Routes>
     </div>
   );
 }
