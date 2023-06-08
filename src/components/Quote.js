@@ -12,7 +12,7 @@ const Quote = () => {
           "https://api.api-ninjas.com/v1/quotes?category=inspirational",
           {
             headers: {
-              "X-Api-Key": "eqaKx38o0Fg1f/rZqOA/sg==epV9zWMwWAegkqnF",
+              "X-Api-Key": process.env.REACT_APP_API_KEY,
             },
           }
         );
