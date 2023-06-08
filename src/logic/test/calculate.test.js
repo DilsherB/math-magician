@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable import/extensions */
 import operate from "./operate";
 import calculate from "./calculate";
 
