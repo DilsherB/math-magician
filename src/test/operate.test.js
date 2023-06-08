@@ -1,25 +1,29 @@
 import Big from "big.js";
 import operate from "../logic/operate";
 
-jest.mock("big.js", () => {
-  const mockBig = jest.fn();
-  mockBig.prototype.toString = jest.fn();
-  return mockBig;
-});
-
 describe("operate", () => {
-  it("should expose a function", () => {
-    expect(operate).toBeDefined();
+  it("sum of two values", () => {
+    const retValue = operate(1, 2, "+");
+    expect(retValue).toBe("3");
   });
-
-  it("should return the expected output", () => {
-    const numberOne = "2";
-    const numberTwo = "3";
-    const operation = "+";
-    const expectedOutput = "5";
-
-    Big.prototype.toString.mockReturnValueOnce(expectedOutput);
-
-    expect(operate(numberOne, numberTwo, operation)).toEqual(expectedOutput);
+  it("subtraction of two numbers", () => {
+    const retValue = operate(1, 2, "-");
+    expect(retValue).toBe("-1");
+  });
+  it("multiplication for two numbers", () => {
+    const retValue = operate(5, 2, "x");
+    expect(retValue).toBe("10");
+  });
+  it("division test", () => {
+    const retValue = operate(5, 2, "÷");
+    expect(retValue).toBe("2.5");
+  });
+  it("modulus test", () => {
+    const retValue = operate(9, 2, "%");
+    expect(retValue).toBe("1");
+  });
+  it("division by zero test", () => {
+    const retValue = operate(9, 0, "÷");
+    expect(retValue).toBe("Can't divide by 0.");
   });
 });
