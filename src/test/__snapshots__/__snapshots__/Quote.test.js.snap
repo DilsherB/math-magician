@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Quote> should render component 1`] = `
+<div
+  className="d-flex align-items-center"
+  style={
+    Object {
+      "height": "85vh",
+    }
+  }
+>
+  <div
+    className="quotes w-50"
+    style={
+      Object {
+        "margin": "auto",
+      }
+    }
+  >
+    <div
+      className="center"
+    >
+      Loading...
+    </div>
+  </div>
+</div>
+`;
