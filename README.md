@@ -99,7 +99,7 @@ After you're finished please remove all the comments and instructions!
 
 
 # 🚀 [Live Demo] <a name="live-demo"></a>
-> You can see the live demo [here](https://math-magician-y8tr.onrender.com/quote)
+> You can see the live demo [here](https://math-magician-y8tr.onrender.com)
 
 <!-- GETTING STARTED -->
 
