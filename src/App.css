@@ -14,6 +14,7 @@
   max-width: 400px;
   margin: auto;
   margin-bottom: 30px;
+  margin-top: 70px;
 }
 
 .display {
@@ -64,4 +65,16 @@ button:hover {
 
 .center {
   text-align: center;
+}
+
+.grad {
+  background-image: linear-gradient(180deg, red, black);
+  height: 100vh;
+  color: white;
+}
+
+.gradMenu {
+  background-image: linear-gradient(180deg, rgb(132, 17, 17), black);
+  /* height: 100vh; */
+  color: white;
 }
